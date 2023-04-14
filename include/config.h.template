@@ -1,6 +1,27 @@
-#define DI_TRAP D6
+/* -*- eval: (platformio-mode 1); -*- */
+#ifndef CONFIG_H_
+#define CONFIG_H_
 
-#define TRAP_SECRET "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
-
-/* #define PRIME_ON_RELEASE */
+/* debug */
 /* #define DEBUG_LOG */
+
+/* pins */
+#define DI_TRAP D6
+/* #define PRIME_ON_RELEASE */
+
+/* time */
+#define TRAP_TIMEOUT 200
+
+#define WIFI_SSID "My Network"
+#define WIFI_PASS "p455w0rd"
+
+/* api */
+#define API_HOST "api.example.com"
+#define API_BASEPATH "/musfalla"
+#define API_PORT 80
+#define API_FINGERPRINT "36 23 58 8D 6B 4C F2 76 7B A1 13 9B A3 71 87 39 50 0A 4C 44"
+#define API_RETRIES 100
+/* #define API_HTTPS */
+#define API_SECRET "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+
+#endif /* CONFIG_H_ */
