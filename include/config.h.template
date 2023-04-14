@@ -1,0 +1,6 @@
+#define DI_TRAP D6
+
+#define TRAP_SECRET "0123456789abcdef0123456789abcdef0123456789abcdef0123456789abcdef"
+
+/* #define PRIME_ON_RELEASE */
+/* #define DEBUG_LOG */
